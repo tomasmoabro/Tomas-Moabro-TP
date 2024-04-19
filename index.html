@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
+    <title>Three days grace</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./imagenes/logo.jpg" alt="logo de la pagina">
+        <ul>
+        <a href="https://threedaysgrace.com/">
+            <li>Home</li>
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Three_Days_Grace">
+            <li>Historia</li>
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Three_Days_Grace#Discograf%C3%ADa">
+            <li>Albums</li>
+        </a>
+        </ul>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/ex1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/ex2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/ex3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+       </div>
+    <div class="contenedor">
+        <div class="noticias">
+          <h1> Sobre la banda:</h1>
+        </div>
+        <div id="contenido" >
+            <p>La banda fue formada por los miembros Adam Gontier (voz y guitarra), Brad Walst (bajo) y Neil Sanderson (batería). Originalmente el grupo se llamaba Groundswell, y comenzó siendo una banda totalmente distinta con un género similar al grunge. La alineación original de la banda quedó formada en 1992 mientras los tres miembros de la banda aún estaban iniciándose en la secundaria.
+                 Pocos días después se integraron dos amigos del instituto, Phil Crowe en la guitarra principal y Joe Grant en la guitarra rítmica. Después de tres años cuando los miembros de la banda cumplieron diecisiete años decidieron mudarse a Toronto para darse a conocer en la escena musical...
+                </p>
+        </div>
+        <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido">x</button>
+    </div>
+
+    <div class="noticias">
+        <h1>Actualidad</h1>
+        <div id="contenido2">
+            <p>El 27 de enero de 2023, la banda anunció una gira con Shinedown y From Ashes to New para abril y mayo de ese mismo año, durante esta gira el 19 de abril en el show en Huntsville, Alabama, de manera sorpresiva, el primer vocalista de la banda Adam Gontier, se subiría al escenario para tocar los clásicos Never Too Late y Riot con la banda, esta es la primera vez que Gontier se sube al escenario con Three Days Grace desde 2012. 
+                Los aficionados consideran esto como una reunión de la banda pese a que en un Meet and Greet un fan les preguntó si iban a hacer una gira de reunión con Adam y la banda dijo que esto fue algo repentino ya que Gontier estaba cerca del lugar del concierto y están muy orgullosos del resultado pero que no ven una gira de reunión pronto.
+            </p>
+        </div>
+        <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2">x</button>
+    </div>
+    
+    <div class="noticias">
+        <h1>Album</h1>
+        <div id="contenido3">
+            <p>Su ultimo album "Explosions" con el vocalista Matt Wals con el que tuvieron varias giras 
+
+            </p>
+        </div>
+        <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">x</button>
+    </div>
+    <footer>
+        <h3>Copyright to Three Days Grace | <a href="https://threedaysgrace.com/"> Su pagina oficial</a></h3>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>
